@@ -121,6 +121,17 @@ article {
 #video {
   width: 100%;
 }
+.floatleftimg {
+  float: left;
+  margin-right: 20px;
+}
+.floatrightimg {
+  float: right;
+  margin-left: 20px;
+}
+a:visited {
+  color: darkblue;
+}
 @media only screen and (max-width: 990px) {
   #video {
     height: 200px;
@@ -131,6 +142,8 @@ article {
   .autoimg {
     width: 100%;
     float: none;
+    margin-left: 0;
+    margin-right: 0;
   }
   .navbar .navbar-brand {
     top: 5px;

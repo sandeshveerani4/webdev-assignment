@@ -68,12 +68,32 @@
         Blog
       </h2>
     </header>
-    <article class="container rounded-4 p-4 bg-body-secondary my-3">
+    <article class="container rounded-4 p-4 bg-body-secondary my-3" id="post1">
       <img
         src="post1.avif"
+        alt="Global news partnerships: Le Monde and Prisa Media"
+        class="autoimg floatleftimg"
+      />
+      <h2>Global news partnerships: Le Monde and Prisa Media</h2>
+      We have partnered with international news organizations Le Monde and Prisa
+      Media to bring French and Spanish news content to ChatGPT. We are
+      continually making improvements to ChatGPT and are supporting the
+      essential role of the news industry in delivering real-time, authoritative
+      information to users. We're excited to announce partnerships with Le Monde
+      and Prisa Media along with its publications like El País, Cinco Días, As,
+      and El Huffpost. Our partnerships will enable ChatGPT users to engage with
+      Le Monde and Prisa Media's high-quality content on recent events in
+      ChatGPT, and their content will also contribute to the training of our
+      models.
+    </article>
+    <article
+      class="container rounded-4 p-4 bg-body-secondary my-3 overflow-hidden"
+      id="post2"
+    >
+      <img
+        src="post2.avif"
         alt="Disrupting Malicious Uses Of Ai By State-affiliated Threat Actors"
-        class="autoimg"
-        style="float: left; margin-right: 20px"
+        class="autoimg floatrightimg"
       />
       <h2>Disrupting Malicious Uses Of Ai By State-affiliated Threat Actors</h2>
       We terminated accounts associated with state-affiliated threat actors. Our
@@ -90,14 +110,11 @@
       outline our approach to detect and disrupt such actors in order to promote
       information sharing and transparency regarding their activities.
     </article>
-    <article
-      class="container rounded-4 p-4 bg-body-secondary my-3 overflow-hidden"
-    >
+    <article class="container rounded-4 p-4 bg-body-secondary my-3" id="post3">
       <img
-        src="post2.avif"
+        src="post3.avif"
         alt="Memory And New Controls For ChatGPT"
-        class="autoimg"
-        style="float: right; margin-left: 20px"
+        class="autoimg floatleftimg"
       />
       <h2>Memory And New Controls For ChatGPT</h2>
       We're testing the ability for ChatGPT to remember things you discuss to
@@ -114,18 +131,25 @@
     <footer class="py-5 bg-body-secondary">
       <div class="text-center justify-content-center mb-3">
         <h3 class="mb-3">Subscribe to Our Newsletter</h3>
-        <form class="form-inline justify-content-center">
+        <form
+          enctype="text/plain"
+          action="mailto:info@textaify.com"
+          method="post"
+          class="form-inline justify-content-center"
+        >
           <div class="input-group container">
             <input
+              name="email"
               type="email"
               class="form-control"
               placeholder="Enter your Email here"
+              required
             />
             <button type="submit" class="btn btn-primary">Subscribe</button>
           </div>
         </form>
       </div>
-      <div class="container text-center social-icons">
+      <div class="container text-center social-icons mb-3">
         <a href="https://github.com/openai"
           ><i class="fab fa-github fa-lg"></i
         ></a>
@@ -138,6 +162,9 @@
         <a href="https://www.linkedin.com/company/openai"
           ><i class="fab fa-linkedin-in fa-lg"></i
         ></a>
+      </div>
+      <div class="container text-center">
+        Source: <a href="https://openai.com" target="_blank">OpenAI.com</a>
       </div>
     </footer>
 

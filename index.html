@@ -104,30 +104,30 @@
           <img
             src="post1.avif"
             alt="Global news partnerships: Le Monde and Prisa Media"
-            class="img-fluid"
+            class="img-fluid mb-3"
           />
-          <h5 class="mt-3">
+          <a href="blog.html#post1">
             Global news partnerships: Le Monde and Prisa Media
-          </h5>
+          </a>
         </div>
         <div class="col-md-4 mb-3 text-center">
           <img
             src="post2.avif"
             alt="Disrupting malicious uses of AI by state-affiliated threat actors
           "
-            class="img-fluid"
+            class="img-fluid mb-3"
           />
-          <h5 class="mt-3">
+          <a href="blog.html#post2">
             Disrupting malicious uses of AI by state-affiliated threat actors
-          </h5>
+          </a>
         </div>
         <div class="col-md-4 mb-3 text-center">
           <img
             src="post3.avif"
             alt="Memory and new controls for ChatGPT"
-            class="img-fluid"
+            class="img-fluid mb-3"
           />
-          <h5 class="mt-3">Memory and new controls for ChatGPT</h5>
+          <a href="blog.html#post3">Memory and new controls for ChatGPT</a>
         </div>
       </div>
     </section>
@@ -200,18 +200,25 @@
     <footer class="py-5 bg-body-secondary">
       <div class="text-center justify-content-center mb-3">
         <h3 class="mb-3">Subscribe to Our Newsletter</h3>
-        <form class="form-inline justify-content-center">
+        <form
+          enctype="text/plain"
+          action="mailto:info@textaify.com"
+          method="post"
+          class="form-inline justify-content-center"
+        >
           <div class="input-group container">
             <input
+              name="email"
               type="email"
               class="form-control"
               placeholder="Enter your Email here"
+              required
             />
             <button type="submit" class="btn btn-primary">Subscribe</button>
           </div>
         </form>
       </div>
-      <div class="container text-center social-icons">
+      <div class="container text-center social-icons mb-3">
         <a href="https://github.com/openai"
           ><i class="fab fa-github fa-lg"></i
         ></a>
@@ -224,6 +231,9 @@
         <a href="https://www.linkedin.com/company/openai"
           ><i class="fab fa-linkedin-in fa-lg"></i
         ></a>
+      </div>
+      <div class="container text-center">
+        Source: <a href="https://openai.com" target="_blank">OpenAI.com</a>
       </div>
     </footer>
 
