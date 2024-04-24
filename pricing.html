@@ -29,129 +29,131 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">AiSearch</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa-solid fa-bars-staggered"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="pricing.html"
-                >Pricing <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contribute.html">Contribute</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
     <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">AiSearch</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="pricing.html"
+                  >Pricing <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contribute.html">Contribute</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <h2 class="bg-body-secondary px-5 py-3 text-center fw-semibold my-0">
         Pricing
       </h2>
     </header>
-    <main class="container rounded-4 p-4 bg-body-secondary my-3">
-      <p>
-        Assistants API and tools (retrieval, code interpreter) make it easy for
-        developers to build AI assistants within their own applications. Each
-        assistant incurs its own retrieval file storage fee based on the files
-        passed to that assistant. The retrieval tool chunks and indexes your
-        files content in our vector database. The tokens used for the Assistant
-        API are billed at the chosen language model's per-token input / output
-        rates and the assistant intelligently chooses which context from the
-        thread to include when calling the model.
-      </p>
-      <table class="table table-bordered rounded-4 table-striped">
-        <caption>
-          <strong>Tool Pricing Table</strong>
-          <details>
-            <summary>Help</summary>
-            <p>
-              In this table you will find the following rows: Tool and Input
-              Pricing
-            </p>
-          </details>
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Tool</th>
-            <th scope="col">Input Pricing</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Code interpreter</th>
-            <td>$0.03 / session</td>
-          </tr>
-          <tr>
-            <th scope="row">Retrieval</th>
-            <td>$0.20 / GB / assistant / day ( free until 04/01/2024 )</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>
-        Create your own custom models by fine-tuning our base models with your
-        training data. Once you fine-tune a model, you'll be billed only for the
-        tokens you use in requests to that model.
-      </p>
-      <table class="table table-bordered rounded-4 table-striped">
-        <caption>
-          <strong>Model Pricing Table</strong>
-          <details>
-            <summary>Help</summary>
-            <p>
-              In this table you will find the following rows: Model, Training
-              Pricing, Input Pricing and Output Pricing.
-            </p>
-          </details>
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Model</th>
-            <th scope="col">Training</th>
-            <th scope="col">Input Usage</th>
-            <th scope="col">Output Usage</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">gpt-3.5-turbo</th>
-            <td>$8.00 / 1M tokens</td>
-            <td>$3.00 / 1M tokens</td>
-            <td>$6.00 / 1M tokens</td>
-          </tr>
-          <tr>
-            <th scope="row">davinci-002</th>
-            <td>$6.00 / 1M tokens</td>
-            <td>$12.00 / 1M tokens</td>
-            <td>$12.00 / 1M tokens</td>
-          </tr>
-          <tr>
-            <th scope="row">babbage-002</th>
-            <td>$0.40 / 1M tokens</td>
-            <td>$1.60 / 1M tokens</td>
-            <td>$1.60 / 1M tokens</td>
-          </tr>
-        </tbody>
-      </table>
+    <main class="container">
+      <article class="rounded-4 p-4 bg-body-secondary my-3">
+        <p>
+          Assistants API and tools (retrieval, code interpreter) make it easy
+          for developers to build AI assistants within their own applications.
+          Each assistant incurs its own retrieval file storage fee based on the
+          files passed to that assistant. The retrieval tool chunks and indexes
+          your files content in our vector database. The tokens used for the
+          Assistant API are billed at the chosen language model's per-token
+          input / output rates and the assistant intelligently chooses which
+          context from the thread to include when calling the model.
+        </p>
+        <table class="table table-bordered rounded-4 table-striped">
+          <caption>
+            <strong>Tool Pricing Table</strong>
+            <details>
+              <summary>Help</summary>
+              <p>
+                In this table you will find the following rows: Tool and Input
+                Pricing
+              </p>
+            </details>
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Tool</th>
+              <th scope="col">Input Pricing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Code interpreter</th>
+              <td>$0.03 / session</td>
+            </tr>
+            <tr>
+              <th scope="row">Retrieval</th>
+              <td>$0.20 / GB / assistant / day ( free until 04/01/2024 )</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Create your own custom models by fine-tuning our base models with your
+          training data. Once you fine-tune a model, you'll be billed only for
+          the tokens you use in requests to that model.
+        </p>
+        <table class="table table-bordered rounded-4 table-striped">
+          <caption>
+            <strong>Model Pricing Table</strong>
+            <details>
+              <summary>Help</summary>
+              <p>
+                In this table you will find the following rows: Model, Training
+                Pricing, Input Pricing and Output Pricing.
+              </p>
+            </details>
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Training</th>
+              <th scope="col">Input Usage</th>
+              <th scope="col">Output Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">gpt-3.5-turbo</th>
+              <td>$8.00 / 1M tokens</td>
+              <td>$3.00 / 1M tokens</td>
+              <td>$6.00 / 1M tokens</td>
+            </tr>
+            <tr>
+              <th scope="row">davinci-002</th>
+              <td>$6.00 / 1M tokens</td>
+              <td>$12.00 / 1M tokens</td>
+              <td>$12.00 / 1M tokens</td>
+            </tr>
+            <tr>
+              <th scope="row">babbage-002</th>
+              <td>$0.40 / 1M tokens</td>
+              <td>$1.60 / 1M tokens</td>
+              <td>$1.60 / 1M tokens</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
     </main>
     <footer class="py-5 bg-body-secondary">
       <div class="text-center justify-content-center mb-3">

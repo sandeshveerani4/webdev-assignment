@@ -29,144 +29,146 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">AiSearch</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa-solid fa-bars-staggered"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pricing.html">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="contribute.html"
-                >Contribute <span class="sr-only">(current)</span></a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
     <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">AiSearch</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contribute.html"
+                  >Contribute <span class="sr-only">(current)</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <h2 class="bg-body-secondary px-5 py-3 text-center fw-semibold my-0">
         Contribute
       </h2>
     </header>
-    <main class="container rounded-4 p-4 bg-body-secondary my-3">
-      <h2>Form to help us Grow</h2>
-      This clone of OpenAI serves as a versatile research assistant, actively
-      engaging users to provide valuable data inputs for research purposes.
-      Users can contribute their insights, preferences, and expertise, enabling
-      the system to generate comprehensive analyses and insights tailored to
-      specific research objectives. By actively involving users in the data
-      collection process, this tool facilitates collaborative knowledge
-      generation and fosters a deeper understanding of diverse topics and
-      domains.
-      <form
-        class="mt-3"
-        action="mailto:info@textaify.com"
-        method="post"
-        enctype="text/plain"
-      >
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <label for="name" class="form-label">Name *</label>
+    <main class="container">
+      <article class="rounded-4 p-4 bg-body-secondary my-3">
+        <h2>Form to help us Grow</h2>
+        This clone of OpenAI serves as a versatile research assistant, actively
+        engaging users to provide valuable data inputs for research purposes.
+        Users can contribute their insights, preferences, and expertise,
+        enabling the system to generate comprehensive analyses and insights
+        tailored to specific research objectives. By actively involving users in
+        the data collection process, this tool facilitates collaborative
+        knowledge generation and fosters a deeper understanding of diverse
+        topics and domains.
+        <form
+          class="mt-3"
+          action="mailto:info@textaify.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Name *</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Enter your Name"
+                maxlength="40"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="image" class="form-label">Image</label>
+              <input type="file" class="form-control" id="image" name="image" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label class="form-label">Model *</label>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  name="model"
+                  id="gpt-3"
+                  class="form-check-input"
+                  checked
+                /><label for="gpt-3" class="form-check-label"
+                  >gpt-3.5-turbo</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  name="model"
+                  id="davinci-002"
+                  class="form-check-input"
+                /><label for="davinci-002" class="form-check-label"
+                  >davinci-002</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  name="model"
+                  id="babbage-002"
+                  class="form-check-input"
+                /><label for="babbage-002" class="form-check-label"
+                  >babbage-002</label
+                >
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="data" class="form-label">Data *</label>
+              <p>
+                Enter the supporting data in organized manner, which will help
+                our model grow!
+              </p>
+              <textarea
+                class="form-control"
+                id="data"
+                name="data"
+                placeholder="Enter Data here"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="py-3 d-flex gap-2 justify-content-end">
             <input
-              type="text"
-              class="form-control"
-              id="name"
-              name="name"
-              placeholder="Enter your Name"
-              maxlength="40"
-              required
+              type="reset"
+              class="btn btn-secondary"
+              name="reset"
+              value="Reset"
+            />
+            <input
+              type="submit"
+              class="btn btn-primary"
+              name="submit"
+              value="Submit"
             />
           </div>
-          <div class="col-md-6">
-            <label for="image" class="form-label">Image</label>
-            <input type="file" class="form-control" id="image" name="image" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <label class="form-label">Model *</label>
-            <div class="form-check">
-              <input
-                type="radio"
-                name="model"
-                id="gpt-3"
-                class="form-check-input"
-                checked
-              /><label for="gpt-3" class="form-check-label"
-                >gpt-3.5-turbo</label
-              >
-            </div>
-            <div class="form-check">
-              <input
-                type="radio"
-                name="model"
-                id="davinci-002"
-                class="form-check-input"
-              /><label for="davinci-002" class="form-check-label"
-                >davinci-002</label
-              >
-            </div>
-            <div class="form-check">
-              <input
-                type="radio"
-                name="model"
-                id="babbage-002"
-                class="form-check-input"
-              /><label for="babbage-002" class="form-check-label"
-                >babbage-002</label
-              >
-            </div>
-          </div>
-          <div class="col-md-6">
-            <label for="data" class="form-label">Data *</label>
-            <p>
-              Enter the supporting data in organized manner, which will help our
-              model grow!
-            </p>
-            <textarea
-              class="form-control"
-              id="data"
-              name="data"
-              placeholder="Enter Data here"
-              required
-            ></textarea>
-          </div>
-        </div>
-        <div class="py-3 d-flex gap-2 justify-content-end">
-          <input
-            type="reset"
-            class="btn btn-secondary"
-            name="reset"
-            value="Reset"
-          />
-          <input
-            type="submit"
-            class="btn btn-primary"
-            name="submit"
-            value="Submit"
-          />
-        </div>
-      </form>
+        </form>
+      </article>
     </main>
 
     <footer class="py-5 bg-body-secondary">

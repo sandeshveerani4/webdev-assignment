@@ -29,173 +29,211 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">AiSearch</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa-solid fa-bars-staggered"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pricing.html">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contribute.html">Contribute</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div id="backimage">
-      <header class="container text-white">
-        <div class="row">
-          <div class="col-md-7">
-            <div class="embed-responsive embed-responsive-16by9">
-              <video src="DallE.mp4" id="video" controls poster="poster.jpg">
-                <p>You browser does not support HTML5 audio!</p>
-                <p>
-                  <a href="DallE.mp4"
-                    >You can download the video in mp4 format.</a
-                  >
-                </p>
-              </video>
-            </div>
-          </div>
-          <div class="col-md-5 d-flex align-items-center">
-            <div class="px-md-5 py-4">
-              <h2>
-                Help us growing together by contributing to our research
-                project.
-              </h2>
-              Cultivating Collaboration: Join Our Research Project and Help Us
-              Grow Together
-              <div class="mt-3">
-                <a href="contribute.html" class="btn btn-secondary"
-                  >Contribute</a
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">AiSearch</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
                 >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contribute.html">Contribute</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="backimage">
+        <div class="container text-white">
+          <div class="row">
+            <div class="col-md-7">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/LK5j3pp0Too?cc_lang_pref=en&cc_load_policy=1"
+                id="video"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="col-md-5 d-flex align-items-center">
+              <div class="px-md-5 py-4">
+                <h2>
+                  Help us growing together by contributing to our research
+                  project.
+                </h2>
+                Cultivating Collaboration: Join Our Research Project and Help Us
+                Grow Together
+                <div class="mt-3">
+                  <a href="contribute.html" class="btn btn-secondary"
+                    >Contribute</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
-    </div>
-    <section class="container mt-5">
-      <h2 class="text-center">Latest Updates</h2>
-      <p class="text-center text-muted">Hear the fresh developments from us.</p>
-      <div class="row">
-        <div class="col-md-4 mb-3 text-center">
-          <img
-            src="post1.avif"
-            alt="Global news partnerships: Le Monde and Prisa Media"
-            class="img-fluid mb-3"
-          />
-          <a href="blog.html#post1">
-            Global news partnerships: Le Monde and Prisa Media
-          </a>
-        </div>
-        <div class="col-md-4 mb-3 text-center">
-          <img
-            src="post2.avif"
-            alt="Disrupting malicious uses of AI by state-affiliated threat actors
+      </div>
+    </header>
+    <main>
+      <article class="container my-5">
+        <h2 class="text-center">What are we?</h2>
+        <p class="text-center text-muted">Something about us</p>
+        <section class="row">
+          <section class="col-md-6">
+            We are an AI research and deployment company. Our mission is to
+            ensure that artificial general intelligence benefits all of
+            humanity. We are building safe and beneficial AGI, but will also
+            consider our mission fulfilled if our work aids others to achieve
+            this outcome.
+            <a href="https://openai.com/about" target="_blank"
+              >Read more about us</a
+            >
+          </section>
+          <aside class="col-md-6 mt-3">
+            <h4>AGI</h4>
+            <p>
+              AGI is Artificial General Intelligence. Our mission is to ensure
+              that artificial general intelligence—AI systems that are generally
+              smarter than humans—benefits all of humanity.
+            </p>
+          </aside>
+        </section>
+      </article>
+      <section class="container mt-5">
+        <h2 class="text-center">Latest Updates</h2>
+        <p class="text-center text-muted">
+          Hear the fresh developments from us.
+        </p>
+        <section class="row">
+          <section class="col-md-4 mb-3 text-center">
+            <img
+              src="post1.avif"
+              alt="Global news partnerships: Le Monde and Prisa Media"
+              class="img-fluid mb-3"
+            />
+            <a href="blog.html#post1">
+              Global news partnerships: Le Monde and Prisa Media
+            </a>
+          </section>
+          <section class="col-md-4 mb-3 text-center">
+            <img
+              src="post2.avif"
+              alt="Disrupting malicious uses of AI by state-affiliated threat actors
           "
-            class="img-fluid mb-3"
-          />
-          <a href="blog.html#post2">
-            Disrupting malicious uses of AI by state-affiliated threat actors
-          </a>
-        </div>
-        <div class="col-md-4 mb-3 text-center">
-          <img
-            src="post3.avif"
-            alt="Memory and new controls for ChatGPT"
-            class="img-fluid mb-3"
-          />
-          <a href="blog.html#post3">Memory and new controls for ChatGPT</a>
-        </div>
-      </div>
-    </section>
+              class="img-fluid mb-3"
+            />
+            <a href="blog.html#post2">
+              Disrupting malicious uses of AI by state-affiliated threat actors
+            </a>
+          </section>
+          <section class="col-md-4 mb-3 text-center">
+            <img
+              src="post3.avif"
+              alt="Memory and new controls for ChatGPT"
+              class="img-fluid mb-3"
+            />
+            <a href="blog.html#post3">Memory and new controls for ChatGPT</a>
+          </section>
+        </section>
+      </section>
 
-    <section class="container my-5">
-      <h2 class="text-center">What we have so far</h2>
-      <p class="text-center text-muted">In Progress Summary</p>
-      <div class="row">
-        <div class="col-md-3">
-          <img
-            src="image1.avif"
-            alt="Clip: Connecting Text And Images"
-            class="img-fluid"
-          />
-        </div>
-        <div class="col-md-9 d-flex align-items-center justify-content-center">
-          <div>
-            <h3 class="mt-3">Clip: Connecting Text And Images</h3>
-            <p>
-              A scalable solution to the alignment problem needs to work on
-              tasks where model outputs are difficult or time-consuming for
-              humans to evaluate. To test scalable alignment techniques, we
-              trained a model to summarize entire books, as shown in the
-              following samples.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div
-          class="col-md-9 order-1 d-flex align-items-center justify-content-center"
-        >
-          <div>
-            <h3 class="mt-3">Summarizing Books With Human Feedback</h3>
-            <p>
-              A scalable solution to the alignment problem needs to work on
-              tasks where model outputs are difficult or time-consuming for
-              humans to evaluate. To test scalable alignment techniques, we
-              trained a model to summarize entire books, as shown in the
-              following samples.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-3 order-md-1">
-          <img
-            src="image2.avif"
-            alt="Summarizing Books With Human Feedback"
-            class="img-fluid"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <img src="image3.avif" alt="Jukebox" class="img-fluid" />
-        </div>
-        <div class="col-md-9 d-flex align-items-center justify-content-center">
-          <div>
-            <h3 class="mt-3">Jukebox</h3>
-            <p>
-              We're introducing Jukebox, a neural net that generates music,
-              including rudimentary singing, as raw audio in a variety of genres
-              and artist styles. We're releasing the model weights and code,
-              along with a tool to explore the generated samples.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <section class="container my-5">
+        <h2 class="text-center">What we have so far</h2>
+        <p class="text-center text-muted">In Progress Summary</p>
+        <article class="row">
+          <figure class="col-md-3">
+            <img
+              src="image1.avif"
+              alt="Clip: Connecting Text And Images"
+              class="img-fluid"
+            />
+            <figcaption>Clip: Connecting Text And Images</figcaption>
+          </figure>
+          <section
+            class="col-md-9 d-flex align-items-center justify-content-center"
+          >
+            <div>
+              <h3 class="mt-3">Clip: Connecting Text And Images</h3>
+              <p>
+                A scalable solution to the alignment problem needs to work on
+                tasks where model outputs are difficult or time-consuming for
+                humans to evaluate. To test scalable alignment techniques, we
+                trained a model to summarize entire books, as shown in the
+                following samples.
+              </p>
+            </div>
+          </section>
+        </article>
+        <article class="row">
+          <section
+            class="col-md-9 order-1 d-flex align-items-center justify-content-center"
+          >
+            <div>
+              <h3 class="mt-3">Summarizing Books With Human Feedback</h3>
+              <p>
+                A scalable solution to the alignment problem needs to work on
+                tasks where model outputs are difficult or time-consuming for
+                humans to evaluate. To test scalable alignment techniques, we
+                trained a model to summarize entire books, as shown in the
+                following samples.
+              </p>
+            </div>
+          </section>
+          <figure class="col-md-3 order-md-1">
+            <img
+              src="image2.avif"
+              alt="Summarizing Books With Human Feedback"
+              class="img-fluid"
+            />
+            <figcaption>Summarizing Books With Human Feedback</figcaption>
+          </figure>
+        </article>
+        <article class="row">
+          <figure class="col-md-3">
+            <img src="image3.avif" alt="Jukebox" class="img-fluid" />
+            <figcaption>Jukebox</figcaption>
+          </figure>
+          <section
+            class="col-md-9 d-flex align-items-center justify-content-center"
+          >
+            <div>
+              <h3 class="mt-3">Jukebox</h3>
+              <p>
+                We're introducing Jukebox, a neural net that generates music,
+                including rudimentary singing, as raw audio in a variety of
+                genres and artist styles. We're releasing the model weights and
+                code, along with a tool to explore the generated samples.
+              </p>
+            </div>
+          </section>
+        </article>
+      </section>
+    </main>
 
     <footer class="py-5 bg-body-secondary">
       <div class="text-center justify-content-center mb-3">
