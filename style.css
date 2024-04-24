@@ -102,7 +102,7 @@ article {
   left: 0;
   content: "";
   z-index: -2;
-  background-image: url("/paper-airplanes.avif");
+  background-image: url("paper-airplanes.avif");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
