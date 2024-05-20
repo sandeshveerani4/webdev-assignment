@@ -27,8 +27,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -67,20 +70,20 @@
       <div id="backimage">
         <div class="container text-white">
           <div class="row">
-            <div class="col-md-7">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/LK5j3pp0Too?cc_lang_pref=en&cc_load_policy=1"
-                id="video"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+            <div
+              class="col-lg-7 d-flex justify-content-center align-items-center"
+            >
+              <video id="video" poster="poster.png" src="video.mp4" controls>
+                <track
+                  src="track.vtt"
+                  srclang="en"
+                  default
+                  label="English"
+                  kind="subtitles"
+                />
+              </video>
             </div>
-            <div class="col-md-5 d-flex align-items-center">
+            <div class="col-lg-5 d-flex align-items-center">
               <div class="px-md-5 py-4">
                 <h2>
                   Help us growing together by contributing to our research
@@ -99,7 +102,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main id="main-content">
       <article class="container my-5">
         <h2 class="text-center">What are we?</h2>
         <p class="text-center text-muted">Something about us</p>
@@ -172,12 +175,14 @@
         <h2 class="text-center">What we have so far</h2>
         <p class="text-center text-muted">In Progress Summary</p>
         <article class="row">
-          <figure class="col-md-3">
-            <img
-              src="image1.avif"
-              alt="Clip: Connecting Text And Images"
-              class="img-fluid"
-            />
+          <figure class="d-flex flex-column align-items-center col-md-3">
+            <a href="image1.jpg" target="_blank">
+              <img
+                src="thumb1.jpg"
+                alt="Clip: Connecting Text And Images"
+                class="img-fluid"
+              />
+            </a>
             <figcaption>Clip: Connecting Text And Images</figcaption>
           </figure>
           <section
@@ -210,18 +215,24 @@
               </p>
             </div>
           </section>
-          <figure class="col-md-3 order-md-1">
-            <img
-              src="image2.avif"
-              alt="Summarizing Books With Human Feedback"
-              class="img-fluid"
-            />
+          <figure
+            class="d-flex flex-column align-items-center col-md-3 order-md-1"
+          >
+            <a href="image2.jpg" target="_blank">
+              <img
+                src="thumb2.jpg"
+                alt="Summarizing Books With Human Feedback"
+                class="img-fluid"
+              />
+            </a>
             <figcaption>Summarizing Books With Human Feedback</figcaption>
           </figure>
         </article>
         <article class="row">
-          <figure class="col-md-3">
-            <img src="image3.avif" alt="Jukebox" class="img-fluid" />
+          <figure class="d-flex flex-column align-items-center col-md-3">
+            <a href="image3.jpg" target="_blank">
+              <img src="thumb3.jpg" alt="Jukebox" class="img-fluid" />
+            </a>
             <figcaption>Jukebox</figcaption>
           </figure>
           <section
